@@ -17,7 +17,8 @@ And that's it!<br />
 Examples
 =================
 <pre>
-/?php
+<![CDATA[
+<?php
 require("security-class.php");
 $security = new Security();
 $security->init_security("MyFirstSecretPassword", "MySecondSecretPassword")
@@ -25,4 +26,5 @@ echo $security->encrypt("hallo");
 echo "<br /><br />";
 echo $security->decrypt($_GET['password']);
 ?>
+]]>
 </pre>
