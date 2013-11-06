@@ -1,4 +1,6 @@
 <?php
+//This class is made by Lars Jansen Productions
+//Please review GitHub for licensing information and examples
 class Security{
 
 	public $unlocker = "";
