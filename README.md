@@ -8,14 +8,15 @@ Usage
 ==================
 Review the examples if you do not want to read this
 1. Include the class into your project: require("security-class.php");
-2. Initialize the class: $security = new Security(); 
-    $security->init_security(SECRET_PASSWORD, ANOTHER_SECRET_PASSWORD);
-3. Encrypt a password: $security->encrypt(PASSWORD_TO_ENCRYPT);
-4. Decrypt a password: $decrypted = $security->decrypt(PASSWORD_TO_DECRYPT);
+2. Initialize the class: <pre>$security = new Security(); </pre>
+    <pre>$security->init_security(SECRET_PASSWORD, ANOTHER_SECRET_PASSWORD);</pre>
+3. Encrypt a password: <pre>$security->encrypt(PASSWORD_TO_ENCRYPT);</pre>
+4. Decrypt a password: <pre>$decrypted = $security->decrypt(PASSWORD_TO_DECRYPT);</pre>
 And that's it!
 
 Examples
 =================
+<pre>
 <?php
 require("security-class.php");
 $security = new Security();
@@ -24,3 +25,4 @@ echo $security->encrypt("hallo");
 echo "<br /><br />";
 echo $security->decrypt($_GET['password']);
 ?>
+</pre>
