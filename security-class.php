@@ -23,7 +23,7 @@ class Security{
 		if(($this->unlocker == "") || ($this->salt == ""))
 			die("<strong>ERROR: </strong>Please initialize the class");
 		if($password == "")
-			die("<strong>ERROR: </strong>No password to encrypt");
+			die("<strong>ERROR: </strong>No password to decrypt");
 		$key = hash('SHA256', $this->salt . $this->unlocker, true);
  		$iv = base64_decode(substr($password, 0, 22) . '==');
  		$password = substr($password, 22);
